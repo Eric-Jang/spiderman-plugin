@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	<ioc id="file" class="spiderman.plugin.util.MyFile" scope="singleton">
+		<inject ref="" name="" type="string" value="dbEnv"/>
+	</ioc>
+	
+	<ioc id="envConfig" class="com.sleepycat.je.EnvironmentConfig" scope="singleton">
+		<inject ref="" name="allowCreate" type="boolean" value="true"/>
+	</ioc>
+	
+	<ioc id="env" class="com.sleepycat.je.Environment" scope="singleton" >
+		<inject ref="file" name="" type="java.io.File" value=""/>
+		<inject ref="envConfig" name="" type="" value=""/>
+	</ioc>
+	
+	<ioc id="hello222" class="spiderman.plugin.Hello222" scope="singleton" />
+</beans>
