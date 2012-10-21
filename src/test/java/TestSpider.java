@@ -2,7 +2,6 @@
 import java.util.Collection;
 import java.util.Map;
 
-import org.eweb4j.config.EWeb4JConfig;
 import org.eweb4j.config.Log;
 import org.eweb4j.config.LogFactory;
 import org.eweb4j.spiderman.fetcher.Page;
@@ -10,18 +9,10 @@ import org.eweb4j.spiderman.spider.SpiderListener;
 import org.eweb4j.spiderman.spider.Spiderman;
 import org.eweb4j.spiderman.task.Task;
 import org.eweb4j.util.CommonUtil;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class TestSpider {
 	private final static Log log = LogFactory.getConfigLogger(TestSpider.class);
-	@BeforeClass
-	public static void prepare() throws Exception {
-		String err = EWeb4JConfig.start();
-		if (err != null)
-			throw new Exception(err);
-		
-	}
 	@Test
 	public void test() throws Exception {
 		Spiderman.init(new SpiderListener() {
