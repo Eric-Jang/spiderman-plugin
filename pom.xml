@@ -36,8 +36,20 @@
 		<url>https://github.com/laiweiwei/spiderman-plugin.git</url>
 	</scm>
 
+	<repositories>
+		<repository>
+			<id>nexus-releases</id>
+			<name>Nexus Releases Repository.</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+		<repository>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshots Repository.</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
+	
 	<dependencies>
-
 		<dependency>
 			<groupId>org.eweb4j</groupId>
 			<artifactId>eweb4j-all</artifactId>
