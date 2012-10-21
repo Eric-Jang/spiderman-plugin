@@ -48,7 +48,6 @@
 		</repository>
 	</repositories>
 	<dependencies>
-
 		<dependency>
 			<groupId>org.eweb4j</groupId>
 			<artifactId>eweb4j-all</artifactId>
