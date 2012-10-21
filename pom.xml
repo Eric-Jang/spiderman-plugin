@@ -6,14 +6,44 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spiderman plgin</name>
 
+	<developers>
+		<developer>
+			<id>weiwei</id>
+			<name>赖伟威</name>
+			<email>l.weiwei@163.com</email>
+			<url>http://laiweiweihi.iteye.com</url>
+			<timezone>8</timezone>
+		</developer>
+		<developer>
+			<id>chenyoca</id>
+			<name>陈永佳</name>
+			<email>chenyoca@gmail.com</email>
+			<timezone>8</timezone>
+		</developer>
+	</developers>
+	<issueManagement>
+		<system>Github Issue</system>
+		<url>https://github.com/laiweiwei/spiderman-plugin/issues</url>
+	</issueManagement>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<scm>
+		<connection>git@github.com:laiweiwei/spiderman-plugin.git</connection>
+		<url>https://github.com/laiweiwei/spiderman-plugin.git</url>
+	</scm>
+
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>org.eweb4j</groupId>
 			<artifactId>eweb4j-all</artifactId>
 			<version>1.9.1-SNAPSHOT</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.eweb4j</groupId>
 			<artifactId>spiderman</artifactId>
@@ -36,4 +66,36 @@
 			<version>4.0.92</version>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<name>Nexus Releases Repository.</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshots Repository.</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<build>
+		<plugins>
+			<!--plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-gpg-plugin</artifactId> 
+				<version>1.4</version> <executions> <execution> <id>sign-artifacts</id> <phase>verify</phase> 
+				<goals> <goal>sign</goal> </goals> </execution> </executions> </plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.0-beta-7</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>

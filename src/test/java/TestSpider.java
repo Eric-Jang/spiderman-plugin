@@ -50,8 +50,8 @@ public class TestSpider {
 
 		// 启动爬虫
 		Spiderman.start();
-		//运行一小时
-		Thread.sleep(CommonUtil.toSeconds("1h").longValue()*1000);
+		//运行10s
+		Thread.sleep(CommonUtil.toSeconds("10s").longValue()*1000);
 		// 关闭爬虫
 		Spiderman.stop();
 	}
