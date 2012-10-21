@@ -35,7 +35,18 @@
 		<connection>git@github.com:laiweiwei/spiderman-plugin.git</connection>
 		<url>https://github.com/laiweiwei/spiderman-plugin.git</url>
 	</scm>
-
+	<repositories>
+		<repository>
+			<id>VelcroRelease</id>
+			<name>maven2.velcrosoft.net-releases</name>
+			<url>http://maven2.velcrosoft.net/velcro-releases-local</url>
+		</repository>
+		<repository>
+			<id>VelcroSnapshot</id>
+			<name>maven2.velcrosoft.net-snapshots</name>
+			<url>http://maven2.velcrosoft.net/velcro-snapshots-local</url>
+		</repository>
+	</repositories>
 	<dependencies>
 
 		<dependency>
