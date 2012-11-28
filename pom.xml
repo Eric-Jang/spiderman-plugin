@@ -37,23 +37,17 @@
 	</scm>
 	<repositories>
 		<repository>
-			<id>VelcroRelease</id>
-			<name>maven2.velcrosoft.net-releases</name>
-			<url>http://maven2.velcrosoft.net/velcro-releases-local</url>
+			<id>nexus-releases</id>
+			<name>Nexus Releases Repository.</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 		</repository>
 		<repository>
-			<id>VelcroSnapshot</id>
-			<name>maven2.velcrosoft.net-snapshots</name>
-			<url>http://maven2.velcrosoft.net/velcro-snapshots-local</url>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshots Repository.</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</repository>
 	</repositories>
 	<dependencies>
-		<dependency>
-			<groupId>org.eweb4j</groupId>
-			<artifactId>eweb4j-all</artifactId>
-			<version>1.9.1-SNAPSHOT</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.eweb4j</groupId>
 			<artifactId>spiderman</artifactId>
